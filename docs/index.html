@@ -133,7 +133,7 @@
     .exp-entry {
       padding-left: 1.3em;
       border-left: 4px solid var(--accent);
-      margin-bottom: 1.2em;
+      margin-bottom: 1.5em;
       animation: fadein 2.2s;
     }
     .exp-title {
@@ -145,6 +145,18 @@
     .exp-org {
       font-size: 0.98em;
       color: #9c27b0;
+      margin-bottom: 0.3em;
+    }
+    .exp-degree {
+      font-size: 0.95em;
+      color: var(--text-body);
+      font-weight: 500;
+      margin-bottom: 0.2em;
+    }
+    .exp-year {
+      font-size: 0.9em;
+      color: #666;
+      font-style: italic;
       margin-bottom: 0.7em;
     }
     .exp-desc {
@@ -234,12 +246,13 @@
     <button class="dark-toggle" onclick="toggleDark()">Toggle Dark Mode</button>
     <!-- Optionally update the src value to your profile image -->
     <img src="assets/img/profile.png" alt="Profile photo" class="circle-img">
-    <h1>Hi, I’m Pranav — an Adventurer at Heart 🤖🌍</h1>
+    <h1>Hi, I'm Pranav — an Adventurer at Heart 🤖🌍</h1>
     <p>
-      I'm a curious mind driven by a passion for AI,  adventure, and meeting new people. Whether I’m unraveling the latest in tech, trying out new foods, or traveling to a new city, I love connecting with others and finding joy in the little discoveries along the way. If you’re up for new experiences or a great conversation, you’re in the right place.
+      I'm a curious mind driven by a passion for AI,  adventure, and meeting new people. Whether I'm unraveling the latest in tech, trying out new foods, or traveling to a new city, I love connecting with others and finding joy in the little discoveries along the way. If you're up for new experiences or a great conversation, you're in the right place.
     </p>
     <nav>
       <a href="#about" class="active">About</a>
+      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -251,7 +264,7 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am a passionate technologist and leader, currently pursuing my MBA at Northwestern University’s Kellogg School of Management. My educational journey—ranging from a Bachelor’s in Computer Science at the University of Wisconsin-Madison to a Master’s in Information Systems with an AI concentration from Northwestern—has equipped me with a unique blend of deep technical expertise and strategic business insight.<br>
+        I am a passionate technologist and leader, currently pursuing my MBA at Northwestern University's Kellogg School of Management. My educational journey—ranging from a Bachelor's in Computer Science at the University of Wisconsin-Madison to a Master's in Information Systems with an AI concentration from Northwestern—has equipped me with a unique blend of deep technical expertise and strategic business insight.<br>
 
         I have a proven track record in designing and developing both mobile and web applications, leading cross-functional teams, and managing full product life cycles. My portfolio includes impactful projects like the NIH Toolbox iOS app and an advanced gaze detection tool for the Baby Toolbox iOS app. In addition to development, I have led DevOps for our teams—overseeing CI/CD pipelines, automating testing workflows, delivering actionable analytics through optimized SQL queries, and deploying cloud-based AI solutions using AWS.<br>
 
@@ -262,49 +275,80 @@
       </p>
     </section>
 
-    <section id="experience">
-      <h2>Education & Experience</h2>
+    <section id="education">
+      <h2>Education</h2>
+      
       <div class="exp-entry">
-        <div class="exp-title">University of Wisconsin Madison</div>
-        <div class="exp-org">Graduated</div>
+        <div class="exp-title">Northwestern University - Kellogg School of Management</div>
+        <div class="exp-org">Evanston, Illinois</div>
+        <div class="exp-degree">Master of Business Administration</div>
+        <div class="exp-year">March 2023 – Present</div>
       </div>
+      
       <div class="exp-entry">
         <div class="exp-title">Northwestern University</div>
-        <div class="exp-org">Graduated</div>
+        <div class="exp-org">Evanston, Illinois</div>
+        <div class="exp-degree">Master's in Information Systems (AI Concentration)</div>
+        <div class="exp-year">March 2020 – June 2022</div>
       </div>
+      
+      <div class="exp-entry">
+        <div class="exp-title">University of Wisconsin Madison</div>
+        <div class="exp-org">Madison, Wisconsin</div>
+        <div class="exp-degree">Bachelor of Science in Computer Science</div>
+        <div class="exp-year">August 2016 - May 2018</div>
+      </div>
+      
       <div class="exp-entry">
         <div class="exp-title">University of Illinois at Chicago</div>
-        <div class="exp-org">Transferred</div>
+        <div class="exp-org">Chicago, Illinois</div>
+        <div class="exp-year">Status: Transferred</div>
       </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      
       <div class="exp-entry">
         <div class="exp-title">Human Computer Interaction Lab, UW Madison</div>
         <div class="exp-org">Research Assistant</div>
+        <div class="exp-year">August 2016 - May 2018</div>
         <div class="exp-desc">• Built chatbots using IBM Watson Conversation.<br>
           • Automated finite transition system generation from JSON files.
         </div>
       </div>
       <div class="exp-entry">
         <div class="exp-title">College of Psychiatry, UW Madison</div>
+        <div class="exp-org">IT Support</div>
+        <div class="exp-year">August 2016 - May 2018</div>
         <div class="exp-desc">• Network troubleshooting (wired & wireless), computer problem solving, and user support.</div>
       </div>
       <div class="exp-entry">
         <div class="exp-title">Athletics Department, UW Madison</div>
+        <div class="exp-org">Event Support Staff</div>
+        <div class="exp-year">August 2016 - May 2018</div>
         <div class="exp-desc">• Provided customer service for events.<br>
           • Supported event security and safety.
         </div>
       </div>
       <div class="exp-entry">
         <div class="exp-title">Engineering Media Services, University of Illinois at Chicago</div>
+        <div class="exp-org">Web Developer</div>
+        <div class="exp-year">August 2016 - May 2018</div>
         <div class="exp-desc">• Designed and maintained PHP/MySQL web apps.<br>
           • Tested Qualtrics surveys.
         </div>
       </div>
       <div class="exp-entry">
         <div class="exp-title">College of Engineering, University of Illinois at Chicago</div>
+        <div class="exp-org">Technical Assistant</div>
+        <div class="exp-year">August 2016 - May 2018</div>
         <div class="exp-desc">• Built computers and met with business admin regarding a web application.</div>
       </div>
       <div class="exp-entry">
         <div class="exp-title">Institute of Palliative Medicine, Medical College, Kerala</div>
+        <div class="exp-org">Administrative Assistant</div>
+        <div class="exp-year">August 2016 - May 2018</div>
         <div class="exp-desc">• Managed records. Answered general questions and messages.</div>
       </div>
     </section>
@@ -376,6 +420,7 @@
         <li>C++</li>
       </ul>
     </section>
+    
     <section id="contact">
       <h2>Contact</h2>
       <form class="contact-form" autocomplete="off" action="mailto:pranavrajiv123@gmail.com" method="post" enctype="text/plain">
@@ -386,11 +431,12 @@
       </form>
     </section>
   </div>
+  
   <script>
     // Highlight navigation active section on scroll (optional enhancement)
     document.addEventListener('scroll', function () {
       const navLinks = document.querySelectorAll('nav a');
-      const sections = ['about', 'experience', 'projects', 'skills', 'contact'].map(id => document.getElementById(id));
+      const sections = ['about', 'education', 'experience', 'projects', 'skills', 'contact'].map(id => document.getElementById(id));
       const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
       let current = 0;
       sections.forEach((s, i) => {
