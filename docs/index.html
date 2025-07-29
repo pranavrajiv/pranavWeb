@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Student & AI Enthusiast – Personal Webpage</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --accent: #ff4081;
+      --background: #f3f6fb;
+      --card-bg: #fff;
+      --text-heading: #212121;
+      --text-body: #424242;
+      --gradient: linear-gradient(90deg, #0d47a1 60%, #ff4081 100%);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      font-family: 'Roboto', Arial, sans-serif;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--gradient);
+      color: #fff;
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.7rem;
+      margin-top: 0;
+      margin-bottom: 0.4em;
+      letter-spacing: 0.02em;
+      animation: fadein 2s;
+    }
+    header p {
+      color: #f8f9fa;
+      font-size: 1.3rem;
+      max-width: 35em;
+      margin: 0 auto 1.5em auto;
+      opacity: 0.95;
+      animation: fadein 2.2s;
+    }
+    nav {
+      display: flex;
+      gap: 2em;
+      justify-content: center;
+      margin-bottom: 2em;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.07em;
+      padding: 0.4em 1em;
+      border-radius: 2em;
+      transition: background 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background: rgba(255,255,255,0.17);
+    }
+    .container {
+      max-width: 850px;
+      margin: 2.5em auto 2em auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 2em;
+    }
+    section {
+      background: var(--card-bg);
+      border-radius: 1.6em;
+      box-shadow: 0 3px 18px rgba(0,0,0,0.055);
+      padding: 2em;
+      animation: fadein 1.2s;
+    }
+    .circle-img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      margin-bottom: 1em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 16px rgba(13,71,161,0.19);
+    }
+    h2 {
+      color: var(--primary);
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 0;
+      letter-spacing: 0.01em;
+      font-size: 1.7em;
+    }
+    ul.skills, ul.projects, ul.experience {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.skills li {
+      display: inline-block;
+      background: var(--background);
+      color: var(--primary);
+      font-weight: 500;
+      padding: 0.44em 1.1em;
+      border-radius: 2em;
+      margin: 0.2em 0.25em;
+      border: 1px solid #e4eaf2;
+      font-size: 1em;
+      transition: background 0.36s;
+    }
+    ul.projects li {
+      margin-bottom: 1.3em;
+      background: #f7f8fa;
+      padding: 1em 1.4em;
+      border-radius: 1em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      transition: transform 0.16s, box-shadow 0.18s;
+      cursor: pointer;
+    }
+    ul.projects li:hover {
+      transform: translateY(-2px) scale(1.015);
+      box-shadow: 0 6px 20px rgba(13,71,161,0.07);
+      background: #eef3fa;
+    }
+    .exp-entry {
+      padding-left: 1.3em;
+      border-left: 4px solid var(--accent);
+      margin-bottom: 1.2em;
+      animation: fadein 2.2s;
+    }
+    .exp-title {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1.09em;
+      margin-bottom: 0.25em;
+    }
+    .exp-org {
+      font-size: 0.98em;
+      color: #9c27b0;
+      margin-bottom: 0.7em;
+    }
+    .exp-desc {
+      margin: 0 0 0.3em 0;
+      color: var(--text-body);
+    }
+    .tags {
+      margin-top: 0.7em;
+      font-size: 0.94em;
+      color: var(--accent);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .contact-form input, .contact-form textarea {
+      padding: 0.8em;
+      border: 1px solid #c6d7eb;
+      border-radius: 1em;
+      font-size: 1em;
+      background: #f5f7fb;
+      outline: none;
+      transition: border 0.22s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: var(--accent);
+    }
+    .contact-form button {
+      background: var(--gradient);
+      color: #fff;
+      padding: 0.7em 0;
+      border: none;
+      border-radius: 1em;
+      font-weight: 600;
+      font-size: 1.08em;
+      cursor: pointer;
+      transition: background 0.36s;
+    }
+    .contact-form button:hover {
+      background: linear-gradient(90deg, #1e88e5 50%, #ff4081 100%);
+    }
+    .dark-toggle {
+      position: absolute;
+      top: 1.2em;
+      right: 1.3em;
+      background: var(--card-bg);
+      color: var(--primary);
+      border: none;
+      border-radius: 1.3em;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      transition: background 0.2s, color 0.2s;
+    }
+    .dark-mode {
+      --background: #18181f;
+      --card-bg: #232336;
+      --text-heading: #e0e0f8;
+      --text-body: #bebecd;
+      --primary: #5cc0fa;
+      --accent: #ff92d0;
+      --gradient: linear-gradient(90deg, #5cc0fa 60%, #ff92d0 100%);
+    }
+    @media (max-width: 720px) {
+      header h1 { font-size: 2.1em; }
+      .container { padding: 0 0.4em; }
+      section { padding: 1.12em; }
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(60px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+  <script>
+    // Simple dark/light mode toggle
+    function toggleDark() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <button class="dark-toggle" onclick="toggleDark()">Toggle Dark Mode</button>
+    <!-- Optionally update the src value to your profile image -->
+    <img src="assets/img/profile.png" alt="Profile photo" class="circle-img">
+    <h1>Hi, I’m Pranav — an Adventurer at Heart 🤖🌍</h1>
+    <p>
+      I'm a curious mind driven by a passion for AI,  adventure, and meeting new people. Whether I’m unraveling the latest in tech, trying out new foods, or traveling to a new city, I love connecting with others and finding joy in the little discoveries along the way. If you’re up for new experiences or a great conversation, you’re in the right place.
+    </p>
+    <nav>
+      <a href="#about" class="active">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate technologist and leader, currently pursuing my MBA at Northwestern University’s Kellogg School of Management. My educational journey—ranging from a Bachelor’s in Computer Science at the University of Wisconsin-Madison to a Master’s in Information Systems with an AI concentration from Northwestern—has equipped me with a unique blend of deep technical expertise and strategic business insight.<br>
+
+        I have a proven track record in designing and developing both mobile and web applications, leading cross-functional teams, and managing full product life cycles. My portfolio includes impactful projects like the NIH Toolbox iOS app and an advanced gaze detection tool for the Baby Toolbox iOS app. In addition to development, I have led DevOps for our teams—overseeing CI/CD pipelines, automating testing workflows, delivering actionable analytics through optimized SQL queries, and deploying cloud-based AI solutions using AWS.<br>
+
+        As Director of the Kellogg Evening Week Tech Club, I am dedicated to mentoring and empowering fellow students to excel in product and project management.<br>
+
+        Outside work, I enjoy recreation beach volleyball, snowboarding, and going on long runs. I am excited to leverage my technical expertise, leadership skills, and global perspective to drive meaningful change in innovative organizations.
+
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Education & Experience</h2>
+      <div class="exp-entry">
+        <div class="exp-title">University of Wisconsin Madison</div>
+        <div class="exp-org">Graduated</div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">Northwestern University</div>
+        <div class="exp-org">Graduated</div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">University of Illinois at Chicago</div>
+        <div class="exp-org">Transferred</div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">Human Computer Interaction Lab, UW Madison</div>
+        <div class="exp-org">Research Assistant</div>
+        <div class="exp-desc">• Built chatbots using IBM Watson Conversation.<br>
+          • Automated finite transition system generation from JSON files.
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">College of Psychiatry, UW Madison</div>
+        <div class="exp-desc">• Network troubleshooting (wired & wireless), computer problem solving, and user support.</div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">Athletics Department, UW Madison</div>
+        <div class="exp-desc">• Provided customer service for events.<br>
+          • Supported event security and safety.
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">Engineering Media Services, University of Illinois at Chicago</div>
+        <div class="exp-desc">• Designed and maintained PHP/MySQL web apps.<br>
+          • Tested Qualtrics surveys.
+        </div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">College of Engineering, University of Illinois at Chicago</div>
+        <div class="exp-desc">• Built computers and met with business admin regarding a web application.</div>
+      </div>
+      <div class="exp-entry">
+        <div class="exp-title">Institute of Palliative Medicine, Medical College, Kerala</div>
+        <div class="exp-desc">• Managed records. Answered general questions and messages.</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li>
+          <span class="exp-title">Desert Object Recognition And Avoidance</span>
+          <div class="tags">#AI #Vision</div>
+        </li>
+        <li>
+          <span class="exp-title">Know Your Flags iOS Application</span>
+          <div class="tags">#Mobile</div>
+        </li>
+        <li>
+          <span class="exp-title">Video Object Detector</span>
+          <div class="tags">#AI #Video</div>
+        </li>
+        <li>
+          <span class="exp-title">Buffer Manager</span>
+          <div class="tags">#Backend</div>
+        </li>
+        <li>
+          <span class="exp-title">Easy Converter</span>
+          <div class="tags">#Utility</div>
+        </li>
+        <li>
+          <span class="exp-title">Emotion Predictor Cross Platform App</span>
+          <div class="tags">#AI #CrossPlatform</div>
+        </li>
+        <li>
+          <span class="exp-title">Smart Home (IoT Project)</span>
+          <div class="tags">#IoT</div>
+        </li>
+        <li>
+          <span class="exp-title">Airport Travel Network</span>
+          <div class="tags">#Network</div>
+        </li>
+        <li>
+          <span class="exp-title">Chrome Extension</span>
+          <div class="tags">#Web</div>
+        </li>
+        <li>
+          <span class="exp-title">Maze Solving</span>
+          <div class="tags">#Algorithm</div>
+        </li>
+        <li>
+          <span class="exp-title">Web Server using LAMP on a Raspberry Pi 3</span>
+          <div class="tags">#Systems #IoT</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Java</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>MySQL</li>
+        <li>Node.js</li>
+        <li>Swift</li>
+        <li>PHP</li>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>C#</li>
+        <li>CSS</li>
+        <li>C++</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" autocomplete="off" action="mailto:pranavrajiv123@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+  <script>
+    // Highlight navigation active section on scroll (optional enhancement)
+    document.addEventListener('scroll', function () {
+      const navLinks = document.querySelectorAll('nav a');
+      const sections = ['about', 'experience', 'projects', 'skills', 'contact'].map(id => document.getElementById(id));
+      const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+      let current = 0;
+      sections.forEach((s, i) => {
+        if(s && s.offsetTop - 80 <= scrollPos) current = i;
+      });
+      navLinks.forEach((a, i) => a.classList.toggle('active', i === current));
+    });
+  </script>
+</body>
+</html>
