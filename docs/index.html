@@ -3,255 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>International Student & AI Enthusiast – Personal Webpage</title>
+  <meta name="description" content="Personal webpage of Pranav Rajiv — product, analytics, and software leader pursuing an MBA at Northwestern Kellogg.">
+  <meta name="keywords" content="Product, Analytics, Software Engineering, iOS, AI, MBA, Northwestern, Kellogg, Digital Health">
+  <meta name="author" content="Pranav Rajiv">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Pranav Rajiv | Product, Analytics & Software Leader">
+  <meta property="og:description" content="Explore Pranav Rajiv's experience in product strategy, analytics, software engineering, and digital health.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:image" content="assets/img/profile.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Pranav Rajiv | Product, Analytics & Software Leader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0d47a1;
-      --accent: #ff4081;
-      --background: #f3f6fb;
-      --card-bg: #fff;
-      --text-heading: #212121;
-      --text-body: #424242;
-      --gradient: linear-gradient(90deg, #0d47a1 60%, #ff4081 100%);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--background);
-      font-family: 'Roboto', Arial, sans-serif;
-      color: var(--text-body);
-      line-height: 1.7;
-    }
-    header {
-      background: var(--gradient);
-      color: #fff;
-      padding: 3rem 1rem 2rem 1rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.7rem;
-      margin-top: 0;
-      margin-bottom: 0.4em;
-      letter-spacing: 0.02em;
-      animation: fadein 2s;
-    }
-    header p {
-      color: #f8f9fa;
-      font-size: 1.3rem;
-      max-width: 35em;
-      margin: 0 auto 1.5em auto;
-      opacity: 0.95;
-      animation: fadein 2.2s;
-    }
-    nav {
-      display: flex;
-      gap: 2em;
-      justify-content: center;
-      margin-bottom: 2em;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.07em;
-      padding: 0.4em 1em;
-      border-radius: 2em;
-      transition: background 0.3s;
-    }
-    nav a:hover, nav a.active {
-      background: rgba(255,255,255,0.17);
-    }
-    .container {
-      max-width: 850px;
-      margin: 2.5em auto 2em auto;
-      padding: 0 1rem;
-      display: grid;
-      gap: 2em;
-    }
-    section {
-      background: var(--card-bg);
-      border-radius: 1.6em;
-      box-shadow: 0 3px 18px rgba(0,0,0,0.055);
-      padding: 2em;
-      animation: fadein 1.2s;
-    }
-    .circle-img {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--accent);
-      margin-bottom: 1em;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 4px 16px rgba(13,71,161,0.19);
-    }
-    h2 {
-      color: var(--primary);
-      font-family: 'Montserrat', sans-serif;
-      margin-top: 0;
-      letter-spacing: 0.01em;
-      font-size: 1.7em;
-    }
-    ul.skills, ul.projects, ul.experience {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    ul.skills li {
-      display: inline-block;
-      background: var(--background);
-      color: var(--primary);
-      font-weight: 500;
-      padding: 0.44em 1.1em;
-      border-radius: 2em;
-      margin: 0.2em 0.25em;
-      border: 1px solid #e4eaf2;
-      font-size: 1em;
-      transition: background 0.36s;
-    }
-    ul.projects li {
-      margin-bottom: 1.3em;
-      background: #f7f8fa;
-      padding: 1em 1.4em;
-      border-radius: 1em;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-      transition: transform 0.16s, box-shadow 0.18s;
-      cursor: pointer;
-    }
-    ul.projects li:hover {
-      transform: translateY(-2px) scale(1.015);
-      box-shadow: 0 6px 20px rgba(13,71,161,0.07);
-      background: #eef3fa;
-    }
-    .exp-entry {
-      padding-left: 1.3em;
-      border-left: 4px solid var(--accent);
-      margin-bottom: 1.5em;
-      animation: fadein 2.2s;
-    }
-    .exp-title {
-      font-weight: 700;
-      color: var(--primary);
-      font-size: 1.09em;
-      margin-bottom: 0.25em;
-    }
-    .exp-org {
-      font-size: 0.98em;
-      color: #9c27b0;
-      margin-bottom: 0.3em;
-    }
-    .exp-degree {
-      font-size: 0.95em;
-      color: var(--text-body);
-      font-weight: 500;
-      margin-bottom: 0.2em;
-    }
-    .exp-year {
-      font-size: 0.9em;
-      color: #666;
-      font-style: italic;
-      margin-bottom: 0.7em;
-    }
-    .exp-desc {
-      margin: 0 0 0.3em 0;
-      color: var(--text-body);
-    }
-    .tags {
-      margin-top: 0.7em;
-      font-size: 0.94em;
-      color: var(--accent);
-    }
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      max-width: 400px;
-      margin: 0 auto;
-    }
-    .contact-form input, .contact-form textarea {
-      padding: 0.8em;
-      border: 1px solid #c6d7eb;
-      border-radius: 1em;
-      font-size: 1em;
-      background: #f5f7fb;
-      outline: none;
-      transition: border 0.22s;
-    }
-    .contact-form input:focus, .contact-form textarea:focus {
-      border-color: var(--accent);
-    }
-    .contact-form button {
-      background: var(--gradient);
-      color: #fff;
-      padding: 0.7em 0;
-      border: none;
-      border-radius: 1em;
-      font-weight: 600;
-      font-size: 1.08em;
-      cursor: pointer;
-      transition: background 0.36s;
-    }
-    .contact-form button:hover {
-      background: linear-gradient(90deg, #1e88e5 50%, #ff4081 100%);
-    }
-    .dark-toggle {
-      position: absolute;
-      top: 1.2em;
-      right: 1.3em;
-      background: var(--card-bg);
-      color: var(--primary);
-      border: none;
-      border-radius: 1.3em;
-      padding: 0.5em 1em;
-      font-size: 1em;
-      cursor: pointer;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-      transition: background 0.2s, color 0.2s;
-    }
-    .dark-mode {
-      --background: #18181f;
-      --card-bg: #232336;
-      --text-heading: #e0e0f8;
-      --text-body: #bebecd;
-      --primary: #5cc0fa;
-      --accent: #ff92d0;
-      --gradient: linear-gradient(90deg, #5cc0fa 60%, #ff92d0 100%);
-    }
-    @media (max-width: 720px) {
-      header h1 { font-size: 2.1em; }
-      .container { padding: 0 0.4em; }
-      section { padding: 1.12em; }
-    }
-    @keyframes fadein {
-      from { opacity: 0; transform: translateY(60px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/main.css">
   <script>
-    // Simple dark/light mode toggle
-    function toggleDark() {
-      document.body.classList.toggle('dark-mode');
-    }
+    function toggleDark() { document.body.classList.toggle('dark-mode'); }
   </script>
 </head>
 <body>
   <header>
-    <button class="dark-toggle" onclick="toggleDark()">Toggle Dark Mode</button>
-    <!-- Optionally update the src value to your profile image -->
-    <img src="assets/img/profile.png" alt="Profile photo" class="circle-img">
-    <h1>Hi, I'm Pranav — an Adventurer at Heart 🤖🌍</h1>
-    <p>
-      I'm a curious mind driven by a passion for AI,  adventure, and meeting new people. Whether I'm unraveling the latest in tech, trying out new foods, or traveling to a new city, I love connecting with others and finding joy in the little discoveries along the way. If you're up for new experiences or a great conversation, you're in the right place.
-    </p>
+    <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+    <img src="assets/img/profile.png" alt="Profile photo of Pranav Rajiv" class="circle-img">
+    <h1>Hi, I'm Pranav Rajiv</h1>
+    <p>Product, analytics, and software leader building digital-health products at the intersection of customer insight, technical execution, and business strategy.</p>
     <nav>
-      <a href="#about" class="active">About</a>
+      <a href="#about" class="active" aria-current="page">About</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -263,185 +41,70 @@
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I am a passionate technologist and leader, currently pursuing my MBA at Northwestern University's Kellogg School of Management. My educational journey—ranging from a Bachelor's in Computer Science at the University of Wisconsin-Madison to a Master's in Information Systems with an AI concentration from Northwestern—has equipped me with a unique blend of deep technical expertise and strategic business insight.<br>
-
-        I have a proven track record in designing and developing both mobile and web applications, leading cross-functional teams, and managing full product life cycles. My portfolio includes impactful projects like the NIH Toolbox iOS app and an advanced gaze detection tool for the Baby Toolbox iOS app. In addition to development, I have led DevOps for our teams—overseeing CI/CD pipelines, automating testing workflows, delivering actionable analytics through optimized SQL queries, and deploying cloud-based AI solutions using AWS.<br>
-
-        As Director of the Kellogg Evening Week Tech Club, I am dedicated to mentoring and empowering fellow students to excel in product and project management.<br>
-
-        Outside work, I enjoy recreation beach volleyball, snowboarding, and going on long runs. I am excited to leverage my technical expertise, leadership skills, and global perspective to drive meaningful change in innovative organizations.
-
-      </p>
+      <p>I am a product, analytics, and software leader with eight years of experience building digital-health products and using customer research, product data, and financial analysis to guide decisions and delivery. I am currently pursuing an MBA at Northwestern University's Kellogg School of Management, focused on Marketing and Operations.</p>
+      <p>My background combines a Bachelor's degree in Computer Science from the University of Wisconsin&ndash;Madison with a Master of Science in Information Systems, AI concentration, from Northwestern University. That combination of engineering, analytics, and business training shapes how I approach product strategy, technical delivery, growth, pricing, customer retention, and investment decisions.</p>
+      <p>At Northwestern University, I lead product and platform work for NIH-funded digital-health programs. My work includes launching an iPad-based gaze-tracking platform for early-autism research, modernizing engineering delivery through CI/CD automation, building iOS applications for clinical-research workflows, and creating data products that help business and research stakeholders make decisions.</p>
+      <p>I am Director of Operations for the Kellogg Evening &amp; Weekend Tech Club, where I coordinate event operations, speaker logistics, and member engagement. Outside work and school, I volunteer with Northwestern's Pain &amp; Palliative Medicine Department and PAWS Chicago. I enjoy pickleball, snowboarding, strength training, dinner clubs, and following financial markets.</p>
     </section>
 
     <section id="education">
       <h2>Education</h2>
-      
-      <div class="exp-entry">
-        <div class="exp-title">Northwestern University - Kellogg School of Management</div>
-        <div class="exp-org">Evanston, Illinois</div>
-        <div class="exp-degree">Master of Business Administration</div>
-        <div class="exp-year">March 2023 – Present</div>
-      </div>
-      
-      <div class="exp-entry">
-        <div class="exp-title">Northwestern University</div>
-        <div class="exp-org">Evanston, Illinois</div>
-        <div class="exp-degree">Master's in Information Systems (AI Concentration)</div>
-        <div class="exp-year">March 2020 – June 2022</div>
-      </div>
-      
-      <div class="exp-entry">
-        <div class="exp-title">University of Wisconsin Madison</div>
-        <div class="exp-org">Madison, Wisconsin</div>
-        <div class="exp-degree">Bachelor of Science in Computer Science</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-      </div>
-      
-      <div class="exp-entry">
-        <div class="exp-title">University of Illinois at Chicago</div>
-        <div class="exp-org">Chicago, Illinois</div>
-        <div class="exp-year">Status: Transferred</div>
-      </div>
+      <div class="exp-entry"><div class="exp-title">Northwestern University &mdash; Kellogg School of Management</div><div class="exp-org">Evanston, Illinois</div><div class="exp-degree">Master of Business Administration Candidate, Focus: Marketing and Operations</div><div class="exp-year">2023 &ndash; 2027 | Expected June 2027</div></div>
+      <div class="exp-entry"><div class="exp-title">Northwestern University</div><div class="exp-org">Evanston, Illinois</div><div class="exp-degree">Master of Science in Information Systems, AI Concentration | GPA: 4.0/4.0</div><div class="exp-year">2020 &ndash; 2022</div></div>
+      <div class="exp-entry"><div class="exp-title">University of Wisconsin&ndash;Madison</div><div class="exp-org">Madison, Wisconsin</div><div class="exp-degree">Bachelor of Science in Computer Science</div><div class="exp-year">2016 &ndash; 2018</div></div>
     </section>
 
     <section id="experience">
       <h2>Work Experience</h2>
-      
-      <div class="exp-entry">
-        <div class="exp-title">Human Computer Interaction Lab, UW Madison</div>
-        <div class="exp-org">Research Assistant</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-        <div class="exp-desc">• Built chatbots using IBM Watson Conversation.<br>
-          • Automated finite transition system generation from JSON files.
-        </div>
-      </div>
-      <div class="exp-entry">
-        <div class="exp-title">College of Psychiatry, UW Madison</div>
-        <div class="exp-org">IT Support</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-        <div class="exp-desc">• Network troubleshooting (wired & wireless), computer problem solving, and user support.</div>
-      </div>
-      <div class="exp-entry">
-        <div class="exp-title">Athletics Department, UW Madison</div>
-        <div class="exp-org">Event Support Staff</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-        <div class="exp-desc">• Provided customer service for events.<br>
-          • Supported event security and safety.
-        </div>
-      </div>
-      <div class="exp-entry">
-        <div class="exp-title">Engineering Media Services, University of Illinois at Chicago</div>
-        <div class="exp-org">Web Developer</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-        <div class="exp-desc">• Designed and maintained PHP/MySQL web apps.<br>
-          • Tested Qualtrics surveys.
-        </div>
-      </div>
-      <div class="exp-entry">
-        <div class="exp-title">College of Engineering, University of Illinois at Chicago</div>
-        <div class="exp-org">Technical Assistant</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-        <div class="exp-desc">• Built computers and met with business admin regarding a web application.</div>
-      </div>
-      <div class="exp-entry">
-        <div class="exp-title">Institute of Palliative Medicine, Medical College, Kerala</div>
-        <div class="exp-org">Administrative Assistant</div>
-        <div class="exp-year">August 2016 - May 2018</div>
-        <div class="exp-desc">• Managed records. Answered general questions and messages.</div>
-      </div>
+      <div class="exp-entry"><div class="exp-title">Product &amp; Platform Lead <span aria-label="official title">(Senior Software Developer)</span></div><div class="exp-org">Northwestern University | Chicago, Illinois</div><div class="exp-year">2024 &ndash; Present</div><div class="exp-desc">• Led the launch and national rollout of an iPad-based gaze-tracking platform for early-autism research, contributing to 30% year-over-year growth in customer adoption and subscription revenue across NIH-funded programs.<br>• Built the investment case for a new gaze-tracking approach by combining clinical research, customer feedback, market need, and ROI analysis; helped secure multi-million-dollar NIH funding for national deployment.<br>• Partnered with clinical, product, and engineering teams to identify churn drivers and prioritize workflow, reporting, and user-interface improvements that reduced churn by 10% and increased NPS by two points.<br>• Analyzed subscriber growth, upgrades, usage, and retention for a multi-device subscription model; delivered weekly analysis used in product and investment decisions.<br>• Led the migration from Jenkins to GitHub Actions, reducing release-cycle time by 40% and improving release reliability through automated build, test, and deployment workflows.<br>• Built and integrated the NIH Toolbox V3 iOS platform, including Zoom SDK connectivity and participant and examiner applications used in clinical-research workflows.<br>• Created training and documentation that reduced intern ramp-up time from more than four weeks to one week.<br>• Used Claude Code and GitHub Copilot in a human-reviewed development workflow to accelerate implementation, surface edge cases, prepare code reviews and technical documentation, and reduce release-preparation time by 32%.</div></div>
+      <div class="exp-entry"><div class="exp-title">Software Developer</div><div class="exp-org">Northwestern University | Chicago, Illinois</div><div class="exp-year">2018 &ndash; 2024</div><div class="exp-desc">• Developed and supported production NIH Toolbox iOS applications, delivering features, resolving defects, and improving reliability for clinical-research users.<br>• Led the migration from Flurry Analytics to Mixpanel; defined and documented the event-tracking design, aligned developers on implementation, and built self-service dashboards for business stakeholders to monitor product usage.<br>• Built an iPad-based gaze-detection instrument using Apple ARKit and the TrueDepth camera to support early-autism research.<br>• Created prototypes, automated test harnesses, and UI tests that accelerated issue detection and shortened QA cycles.<br>• Developed .NET and UiPath automations for data extraction, SQL Server integration, and CSV reporting across NIH Toolbox applications.<br>• Built automated reporting systems and data pipelines across digital-health applications, improving query performance 10x and giving leadership visibility into revenue, subscriber trends, engagement, and retention.<br>• Assessed pricing alternatives using customer surveys, product behavior, and financial models; recommended an approach projected to increase revenue by 25%.</div></div>
+      <div class="exp-entry"><div class="exp-title">Software Developer Intern</div><div class="exp-org">Ionic Framework | Madison, Wisconsin</div><div class="exp-year">July 2017 &ndash; September 2017</div><div class="exp-desc">• Built a Sphinx documentation extension that automatically generated documentation for nested classes in SQLAlchemy models.<br>• Documented, presented, and demoed product improvements for the engineering team while working in an Agile software-development environment.</div></div>
+      <div class="exp-entry"><div class="exp-title">Undergraduate Research Assistant</div><div class="exp-org">Human&ndash;Computer Interaction Lab, University of Wisconsin&ndash;Madison</div><div class="exp-year">July 2017 &ndash; January 2018</div><div class="exp-desc">• Built a Java-based simulator to identify chatbot design flaws using state, path, and transition coverage.<br>• Developed chatbots using IBM Watson Conversation and automated finite-transition-system generation from JSON files.</div></div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <ul class="projects">
-        <li>
-          <span class="exp-title">Desert Object Recognition And Avoidance</span>
-          <div class="tags">#AI #Vision</div>
-        </li>
-        <li>
-          <span class="exp-title">Know Your Flags iOS Application</span>
-          <div class="tags">#Mobile</div>
-        </li>
-        <li>
-          <span class="exp-title">Video Object Detector</span>
-          <div class="tags">#AI #Video</div>
-        </li>
-        <li>
-          <span class="exp-title">Buffer Manager</span>
-          <div class="tags">#Backend</div>
-        </li>
-        <li>
-          <span class="exp-title">Easy Converter</span>
-          <div class="tags">#Utility</div>
-        </li>
-        <li>
-          <span class="exp-title">Emotion Predictor Cross Platform App</span>
-          <div class="tags">#AI #CrossPlatform</div>
-        </li>
-        <li>
-          <span class="exp-title">Smart Home (IoT Project)</span>
-          <div class="tags">#IoT</div>
-        </li>
-        <li>
-          <span class="exp-title">Airport Travel Network</span>
-          <div class="tags">#Network</div>
-        </li>
-        <li>
-          <span class="exp-title">Chrome Extension</span>
-          <div class="tags">#Web</div>
-        </li>
-        <li>
-          <span class="exp-title">Maze Solving</span>
-          <div class="tags">#Algorithm</div>
-        </li>
-        <li>
-          <span class="exp-title">Web Server using LAMP on a Raspberry Pi 3</span>
-          <div class="tags">#Systems #IoT</div>
-        </li>
+        <li><div class="project-content"><span class="exp-title">Sign Language Detector</span><div class="tags">#Python #MediaPipe #Keras #AWS #SageMaker #AI</div><p class="exp-desc">Built a real-time sign-language detection application using MediaPipe and a Keras deep-learning model that achieved 99% accuracy. Built a Python front end connected to an AWS SageMaker endpoint through Lambda and API Gateway for real-time inference.</p></div><img class="project-image" src="assets/img/sign-language-detector.png" alt="Sign Language Detector Python user interface"></li>
+        <li><div class="project-content"><span class="exp-title">Desert Object Recognition And Avoidance</span><div class="tags">#TensorFlow #ComputerVision #Robotics #Kinect</div><p class="exp-desc">Used TensorFlow to detect rocks and obstacles from an Xbox Kinect feed for the UW Robotics navigation team and its rover-competition work.</p></div><img class="project-image" src="assets/img/port04.jpg" alt="Desert Object Recognition and Avoidance project"></li>
+        <li><div class="project-content"><span class="exp-title">Know Your Flags iOS Application</span><div class="tags">#Swift #Xcode #TensorFlow #CoreML #Mobile</div><p class="exp-desc">Built a Swift iOS application that lets users photograph country flags and predicts the associated country. Trained an image-classification dataset with MobileNets in TensorFlow and converted the model to Core ML.</p></div><img class="project-image" src="assets/img/port10.png" alt="Know Your Flags iOS application"></li>
+        <li><div class="project-content"><span class="exp-title">Video Object Detector</span><div class="tags">#Python #TensorFlow #OpenCV #ComputerVision</div><p class="exp-desc">Built a Python application that detects objects while playing video files using TensorFlow, OpenCV, and a model trained on Microsoft's COCO dataset.</p></div><img class="project-image" src="assets/img/videoClassifier.png" alt="Video Object Detector project"></li>
+        <li><div class="project-content"><span class="exp-title">Buffer Manager</span><div class="tags">#Systems #Algorithms #Backend</div><p class="exp-desc">Created a fully functional buffer manager that performs page replacement using the clock algorithm.</p></div><img class="project-image" src="assets/img/port05.jpg" alt="Buffer Manager project"></li>
+        <li><div class="project-content"><span class="exp-title">Easy Converter</span><div class="tags">#Swift #Xcode #iOS #Mobile</div><p class="exp-desc">Built an iOS application that lets users select common measurement units and convert between related units.</p></div><img class="project-image" src="assets/img/port08.png" alt="Easy Converter iOS application"></li>
+        <li><div class="project-content"><span class="exp-title">Emotion Predictor Cross-Platform App</span><div class="tags">#Xamarin #CSharp #Azure #API #Mobile</div><p class="exp-desc">Created a cross-platform application in Microsoft Xamarin for iOS, Android, and Windows that predicts emotions from user-uploaded images through HTTP requests to Microsoft's Cognitive Services API and JSON response processing.</p></div><img class="project-image" src="assets/img/port09.png" alt="Emotion Predictor cross-platform application"></li>
+        <li><div class="project-content"><span class="exp-title">Smart Home (IoT Project)</span><div class="tags">#IoT #NodeJS #RaspberryPi #HTTP</div><p class="exp-desc">Built an IoT system that controls room lights through POST requests to a Node.js server running on a Raspberry Pi.</p></div><img class="project-image" src="assets/img/port06.jpg" alt="Smart Home IoT project"></li>
+        <li><div class="project-content"><span class="exp-title">Airport Travel Network</span><div class="tags">#Algorithms #Graphs #Java</div><p class="exp-desc">Built a program that determines whether a traveler can reach one airport from another based on available connecting flights.</p></div><img class="project-image" src="assets/img/port01.jpg" alt="Airport Travel Network project"></li>
+        <li><div class="project-content"><span class="exp-title">Chrome Extension</span><div class="tags">#JavaScript #Web #API #ChromeExtension</div><p class="exp-desc">Built a Chrome extension that loads the Wikipedia page for song composers while a YouTube video is playing by sending HTTP requests to the Wikipedia API.</p></div><img class="project-image" src="assets/img/port07.jpg" alt="Chrome Extension project"></li>
+        <li><div class="project-content"><span class="exp-title">Maze Solving</span><div class="tags">#Java #Algorithms #DepthFirstSearch</div><p class="exp-desc">Created a Java game with a graphical interface that displays maze start and end positions and finds a path using depth-first search.</p></div><img class="project-image" src="assets/img/port02.jpg" alt="Maze Solving Java project"></li>
+        <li><div class="project-content"><span class="exp-title">Web Server Using LAMP on Raspberry Pi 3</span><div class="tags">#LAMP #RaspberryPi #Linux #WebServer #IoT</div><p class="exp-desc">Created a LAMP web server on a Raspberry Pi 3 with a graphical interface for uploading files and listing files stored on the server.</p></div><img class="project-image" src="assets/img/port03.jpg" alt="LAMP web server running on Raspberry Pi 3"></li>
+        <li><div class="project-content"><span class="exp-title">Key Tracker</span><div class="tags">#PHP #MySQL #JavaScript #HTML #CSS #Web</div><p class="exp-desc">Built a web application that performed CRUD operations on employee records and authorized building access based on employee identification numbers.</p></div><img class="project-image" src="assets/img/key-tracker.png" alt="Key Tracker web application"></li>
+        <li><div class="project-content"><span class="exp-title">HealthPRO: Health and Nutrition Tracker</span><div class="tags">#iOS #Swift #Vision #OCR #Xcode #Git</div><p class="exp-desc">Built an iOS application that tracks users' food intake and recommends exercise routines to help them reach weight goals. Used Apple's Vision framework to extract nutrition information from food labels with OCR.</p></div><img class="project-image" src="assets/img/healthpro.png" alt="HealthPRO iOS health and nutrition tracker application"></li>
       </ul>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-      <ul class="skills">
-        <li>Java</li>
-        <li>C</li>
-        <li>Python</li>
-        <li>MySQL</li>
-        <li>Node.js</li>
-        <li>Swift</li>
-        <li>PHP</li>
-        <li>HTML</li>
-        <li>JavaScript</li>
-        <li>C#</li>
-        <li>CSS</li>
-        <li>C++</li>
-      </ul>
+      <ul class="skills"><li>Swift</li><li>Python</li><li>Java</li><li>C++</li><li>C#</li><li>Objective-C</li><li>JavaScript</li><li>SQL</li><li>.NET</li><li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>Jenkins</li><li>CI/CD</li><li>Xcode</li><li>Fastlane</li><li>AWS</li><li>GCP</li><li>SQL Server</li><li>UiPath</li><li>Postman</li><li>ARKit</li><li>TrueDepth</li><li>Zoom SDK</li><li>Mixpanel</li><li>Flurry Analytics</li><li>TensorFlow</li><li>OpenCV</li><li>MediaPipe</li><li>Keras</li><li>Core ML</li><li>AWS SageMaker</li><li>AWS Lambda</li><li>API Gateway</li><li>Node.js</li><li>Xamarin</li><li>Automated Testing</li><li>UI Testing</li><li>Claude Code</li><li>GitHub Copilot</li><li>Product Analytics</li><li>Financial Modeling</li><li>Data Visualization</li></ul>
     </section>
-    
+
     <section id="contact">
       <h2>Contact</h2>
-      <form class="contact-form" autocomplete="off" action="mailto:pranavrajiv123@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+      <form class="contact-form" autocomplete="off" action="mailto:pranav.rajiv@kellogg.northwestern.edu" method="post" enctype="text/plain">
+        <label for="name" class="visually-hidden">Your Name</label><input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+        <label for="email" class="visually-hidden">Your Email</label><input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+        <label for="message" class="visually-hidden">Your Message</label><textarea id="message" name="message" rows="4" placeholder="How can I help you?" required aria-required="true"></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
   </div>
-  
+
   <script>
-    // Highlight navigation active section on scroll (optional enhancement)
     document.addEventListener('scroll', function () {
       const navLinks = document.querySelectorAll('nav a');
       const sections = ['about', 'education', 'experience', 'projects', 'skills', 'contact'].map(id => document.getElementById(id));
       const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
       let current = 0;
-      sections.forEach((s, i) => {
-        if(s && s.offsetTop - 80 <= scrollPos) current = i;
-      });
+      sections.forEach((s, i) => { if (s && s.offsetTop - 80 <= scrollPos) current = i; });
       navLinks.forEach((a, i) => a.classList.toggle('active', i === current));
     });
   </script>
