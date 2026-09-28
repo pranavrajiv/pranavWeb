@@ -367,3 +367,19 @@ ul.projects li:hover {
   outline: none;
   box-shadow: var(--focus-ring);
 }
+
+#form-status {
+  max-width: 400px;
+  min-height: 1.7em;
+  margin: 1em auto 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+#form-status.form-success {
+  color: #1b7f4c;
+}
+
+#form-status.form-error {
+  color: #b42318;
+}

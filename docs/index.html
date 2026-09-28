@@ -1,112 +1,519 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal webpage of Pranav Rajiv — product, analytics, and software leader pursuing an MBA at Northwestern Kellogg.">
-  <meta name="keywords" content="Product, Analytics, Software Engineering, iOS, AI, MBA, Northwestern, Kellogg, Digital Health">
-  <meta name="author" content="Pranav Rajiv">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Pranav Rajiv | Product, Analytics & Software Leader">
-  <meta property="og:description" content="Explore Pranav Rajiv's experience in product strategy, analytics, software engineering, and digital health.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yourwebsite.com">
-  <meta property="og:image" content="assets/img/profile.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Pranav Rajiv | Product, Analytics & Software Leader</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script>
-    function toggleDark() { document.body.classList.toggle('dark-mode'); }
-  </script>
-</head>
-<body>
-  <header>
-    <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode">Toggle Dark Mode</button>
-    <img src="assets/img/profile.png" alt="Profile photo of Pranav Rajiv" class="circle-img">
-    <h1>Hi, I'm Pranav Rajiv</h1>
-    <p>Product, analytics, and software leader building digital-health products at the intersection of customer insight, technical execution, and business strategy.</p>
-    <a class="resume-download" href="Resume.pdf" download="Pranav-Rajiv-Resume.pdf" aria-label="Download Pranav Rajiv's resume PDF">Download Resume</a>
-    <nav>
-      <a href="#about" class="active" aria-current="page">About</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a product, analytics, and software leader with eight years of experience building digital-health products and using customer research, product data, and financial analysis to guide decisions and delivery. I am currently pursuing an MBA at Northwestern University's Kellogg School of Management, focused on Marketing and Operations.</p>
-      <p>My background combines a Bachelor's degree in Computer Science from the University of Wisconsin&ndash;Madison with a Master of Science in Information Systems, AI concentration, from Northwestern University. That combination of engineering, analytics, and business training shapes how I approach product strategy, technical delivery, growth, pricing, customer retention, and investment decisions.</p>
-      <p>At Northwestern University, I lead product and platform work for NIH-funded digital-health programs. My work includes launching an iPad-based gaze-tracking platform for early-autism research, modernizing engineering delivery through CI/CD automation, building iOS applications for clinical-research workflows, and creating data products that help business and research stakeholders make decisions.</p>
-      <p>I am Director of Operations for the Kellogg Evening &amp; Weekend Tech Club, where I coordinate event operations, speaker logistics, and member engagement. Outside work and school, I volunteer with Northwestern's Pain &amp; Palliative Medicine Department and PAWS Chicago. I enjoy pickleball, snowboarding, strength training, dinner clubs, and following financial markets.</p>
-    </section>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Personal webpage of Pranav Rajiv — product, analytics, and software leader pursuing an MBA at Northwestern Kellogg."
+        />
+        <meta
+            name="keywords"
+            content="Product, Analytics, Software Engineering, iOS, AI, MBA, Northwestern, Kellogg, Digital Health"
+        />
+        <meta name="author" content="Pranav Rajiv" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Pranav Rajiv | Product, Analytics & Software Leader" />
+        <meta
+            property="og:description"
+            content="Explore Pranav Rajiv's experience in product strategy, analytics, software engineering, and digital health."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:image" content="assets/img/profile.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>Pranav Rajiv | Product, Analytics & Software Leader</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <script>
+            function toggleDark() {
+                document.body.classList.toggle("dark-mode");
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <button class="dark-toggle" onclick="toggleDark()" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+            <img src="assets/img/profile.png" alt="Profile photo of Pranav Rajiv" class="circle-img" />
+            <h1>Hi, I'm Pranav Rajiv</h1>
+            <p>
+                Product, analytics, and software leader building digital-health products at the intersection of customer
+                insight, technical execution, and business strategy.
+            </p>
+            <a
+                class="resume-download"
+                href="Resume.pdf"
+                download="Pranav-Rajiv-Resume.pdf"
+                aria-label="Download Pranav Rajiv's resume PDF"
+                >Download Resume</a
+            >
+            <nav>
+                <a href="#about" class="active" aria-current="page">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <div class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a product, analytics, and software leader with eight years of experience building
+                    digital-health products and using customer research, product data, and financial analysis to guide
+                    decisions and delivery. I am currently pursuing an MBA at Northwestern University's Kellogg School
+                    of Management, focused on Marketing and Operations.
+                </p>
+                <p>
+                    My background combines a Bachelor's degree in Computer Science from the University of
+                    Wisconsin&ndash;Madison with a Master of Science in Information Systems, AI concentration, from
+                    Northwestern University. That combination of engineering, analytics, and business training shapes
+                    how I approach product strategy, technical delivery, growth, pricing, customer retention, and
+                    investment decisions.
+                </p>
+                <p>
+                    At Northwestern University, I lead product and platform work for NIH-funded digital-health programs.
+                    My work includes launching an iPad-based gaze-tracking platform for early-autism research,
+                    modernizing engineering delivery through CI/CD automation, building iOS applications for
+                    clinical-research workflows, and creating data products that help business and research stakeholders
+                    make decisions.
+                </p>
+                <p>
+                    I am Director of Operations for the Kellogg Evening &amp; Weekend Tech Club, where I coordinate
+                    event operations, speaker logistics, and member engagement. Outside work and school, I volunteer
+                    with Northwestern's Pain &amp; Palliative Medicine Department and PAWS Chicago. I enjoy pickleball,
+                    snowboarding, strength training, dinner clubs, and following financial markets.
+                </p>
+            </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <div class="exp-entry"><div class="exp-title">Northwestern University &mdash; Kellogg School of Management</div><div class="exp-org">Evanston, Illinois</div><div class="exp-degree">Master of Business Administration Candidate, Focus: Marketing and Operations</div><div class="exp-year">2023 &ndash; 2027 | Expected June 2027</div></div>
-      <div class="exp-entry"><div class="exp-title">Northwestern University</div><div class="exp-org">Evanston, Illinois</div><div class="exp-degree">Master of Science in Information Systems, AI Concentration | GPA: 4.0/4.0</div><div class="exp-year">2020 &ndash; 2022</div></div>
-      <div class="exp-entry"><div class="exp-title">University of Wisconsin&ndash;Madison</div><div class="exp-org">Madison, Wisconsin</div><div class="exp-degree">Bachelor of Science in Computer Science</div><div class="exp-year">2016 &ndash; 2018</div></div>
-    </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="exp-entry">
+                    <div class="exp-title">Northwestern University &mdash; Kellogg School of Management</div>
+                    <div class="exp-org">Evanston, Illinois</div>
+                    <div class="exp-degree">
+                        Master of Business Administration Candidate, Focus: Marketing and Operations
+                    </div>
+                    <div class="exp-year">2023 &ndash; 2027 | Expected June 2027</div>
+                </div>
+                <div class="exp-entry">
+                    <div class="exp-title">Northwestern University</div>
+                    <div class="exp-org">Evanston, Illinois</div>
+                    <div class="exp-degree">
+                        Master of Science in Information Systems, AI Concentration | GPA: 4.0/4.0
+                    </div>
+                    <div class="exp-year">2020 &ndash; 2022</div>
+                </div>
+                <div class="exp-entry">
+                    <div class="exp-title">University of Wisconsin&ndash;Madison</div>
+                    <div class="exp-org">Madison, Wisconsin</div>
+                    <div class="exp-degree">Bachelor of Science in Computer Science</div>
+                    <div class="exp-year">2016 &ndash; 2018</div>
+                </div>
+            </section>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="exp-entry"><div class="exp-title">Product &amp; Platform Lead <span aria-label="official title">(Senior Software Developer)</span></div><div class="exp-org">Northwestern University | Chicago, Illinois</div><div class="exp-year">2024 &ndash; Present</div><div class="exp-desc">• Led the launch and national rollout of an iPad-based gaze-tracking platform for early-autism research, contributing to 30% year-over-year growth in customer adoption and subscription revenue across NIH-funded programs.<br>• Built the investment case for a new gaze-tracking approach by combining clinical research, customer feedback, market need, and ROI analysis; helped secure multi-million-dollar NIH funding for national deployment.<br>• Partnered with clinical, product, and engineering teams to identify churn drivers and prioritize workflow, reporting, and user-interface improvements that reduced churn by 10% and increased NPS by two points.<br>• Analyzed subscriber growth, upgrades, usage, and retention for a multi-device subscription model; delivered weekly analysis used in product and investment decisions.<br>• Led the migration from Jenkins to GitHub Actions, reducing release-cycle time by 40% and improving release reliability through automated build, test, and deployment workflows.<br>• Built and integrated the NIH Toolbox V3 iOS platform, including Zoom SDK connectivity and participant and examiner applications used in clinical-research workflows.<br>• Created training and documentation that reduced intern ramp-up time from more than four weeks to one week.<br>• Used Claude Code and GitHub Copilot in a human-reviewed development workflow to accelerate implementation, surface edge cases, prepare code reviews and technical documentation, and reduce release-preparation time by 32%.</div></div>
-      <div class="exp-entry"><div class="exp-title">Software Developer</div><div class="exp-org">Northwestern University | Chicago, Illinois</div><div class="exp-year">2018 &ndash; 2024</div><div class="exp-desc">• Developed and supported production NIH Toolbox iOS applications, delivering features, resolving defects, and improving reliability for clinical-research users.<br>• Led the migration from Flurry Analytics to Mixpanel; defined and documented the event-tracking design, aligned developers on implementation, and built self-service dashboards for business stakeholders to monitor product usage.<br>• Built an iPad-based gaze-detection instrument using Apple ARKit and the TrueDepth camera to support early-autism research.<br>• Created prototypes, automated test harnesses, and UI tests that accelerated issue detection and shortened QA cycles.<br>• Developed .NET and UiPath automations for data extraction, SQL Server integration, and CSV reporting across NIH Toolbox applications.<br>• Built automated reporting systems and data pipelines across digital-health applications, improving query performance 10x and giving leadership visibility into revenue, subscriber trends, engagement, and retention.<br>• Assessed pricing alternatives using customer surveys, product behavior, and financial models; recommended an approach projected to increase revenue by 25%.</div></div>
-      <div class="exp-entry"><div class="exp-title">Software Developer Intern</div><div class="exp-org">Ionic Framework | Madison, Wisconsin</div><div class="exp-year">July 2017 &ndash; September 2017</div><div class="exp-desc">• Built a Sphinx documentation extension that automatically generated documentation for nested classes in SQLAlchemy models.<br>• Documented, presented, and demoed product improvements for the engineering team while working in an Agile software-development environment.</div></div>
-      <div class="exp-entry"><div class="exp-title">Undergraduate Research Assistant</div><div class="exp-org">Human&ndash;Computer Interaction Lab, University of Wisconsin&ndash;Madison</div><div class="exp-year">July 2017 &ndash; January 2018</div><div class="exp-desc">• Built a Java-based simulator to identify chatbot design flaws using state, path, and transition coverage.<br>• Developed chatbots using IBM Watson Conversation and automated finite-transition-system generation from JSON files.</div></div>
-    </section>
+            <section id="experience">
+                <h2>Work Experience</h2>
+                <div class="exp-entry">
+                    <div class="exp-title">
+                        Product &amp; Platform Lead <span aria-label="official title">(Senior Software Developer)</span>
+                    </div>
+                    <div class="exp-org">Northwestern University | Chicago, Illinois</div>
+                    <div class="exp-year">2024 &ndash; Present</div>
+                    <div class="exp-desc">
+                        • Led the launch and national rollout of an iPad-based gaze-tracking platform for early-autism
+                        research, contributing to 30% year-over-year growth in customer adoption and subscription
+                        revenue across NIH-funded programs.<br />• Built the investment case for a new gaze-tracking
+                        approach by combining clinical research, customer feedback, market need, and ROI analysis;
+                        helped secure multi-million-dollar NIH funding for national deployment.<br />• Partnered with
+                        clinical, product, and engineering teams to identify churn drivers and prioritize workflow,
+                        reporting, and user-interface improvements that reduced churn by 10% and increased NPS by two
+                        points.<br />• Analyzed subscriber growth, upgrades, usage, and retention for a multi-device
+                        subscription model; delivered weekly analysis used in product and investment decisions.<br />•
+                        Led the migration from Jenkins to GitHub Actions, reducing release-cycle time by 40% and
+                        improving release reliability through automated build, test, and deployment workflows.<br />•
+                        Built and integrated the NIH Toolbox V3 iOS platform, including Zoom SDK connectivity and
+                        participant and examiner applications used in clinical-research workflows.<br />• Created
+                        training and documentation that reduced intern ramp-up time from more than four weeks to one
+                        week.<br />• Used Claude Code and GitHub Copilot in a human-reviewed development workflow to
+                        accelerate implementation, surface edge cases, prepare code reviews and technical documentation,
+                        and reduce release-preparation time by 32%.
+                    </div>
+                </div>
+                <div class="exp-entry">
+                    <div class="exp-title">Software Developer</div>
+                    <div class="exp-org">Northwestern University | Chicago, Illinois</div>
+                    <div class="exp-year">2018 &ndash; 2024</div>
+                    <div class="exp-desc">
+                        • Developed and supported production NIH Toolbox iOS applications, delivering features,
+                        resolving defects, and improving reliability for clinical-research users.<br />• Led the
+                        migration from Flurry Analytics to Mixpanel; defined and documented the event-tracking design,
+                        aligned developers on implementation, and built self-service dashboards for business
+                        stakeholders to monitor product usage.<br />• Built an iPad-based gaze-detection instrument
+                        using Apple ARKit and the TrueDepth camera to support early-autism research.<br />• Created
+                        prototypes, automated test harnesses, and UI tests that accelerated issue detection and
+                        shortened QA cycles.<br />• Developed .NET and UiPath automations for data extraction, SQL
+                        Server integration, and CSV reporting across NIH Toolbox applications.<br />• Built automated
+                        reporting systems and data pipelines across digital-health applications, improving query
+                        performance 10x and giving leadership visibility into revenue, subscriber trends, engagement,
+                        and retention.<br />• Assessed pricing alternatives using customer surveys, product behavior,
+                        and financial models; recommended an approach projected to increase revenue by 25%.
+                    </div>
+                </div>
+                <div class="exp-entry">
+                    <div class="exp-title">Software Developer Intern</div>
+                    <div class="exp-org">Ionic Framework | Madison, Wisconsin</div>
+                    <div class="exp-year">July 2017 &ndash; September 2017</div>
+                    <div class="exp-desc">
+                        • Built a Sphinx documentation extension that automatically generated documentation for nested
+                        classes in SQLAlchemy models.<br />• Documented, presented, and demoed product improvements for
+                        the engineering team while working in an Agile software-development environment.
+                    </div>
+                </div>
+                <div class="exp-entry">
+                    <div class="exp-title">Undergraduate Research Assistant</div>
+                    <div class="exp-org">
+                        Human&ndash;Computer Interaction Lab, University of Wisconsin&ndash;Madison
+                    </div>
+                    <div class="exp-year">July 2017 &ndash; January 2018</div>
+                    <div class="exp-desc">
+                        • Built a Java-based simulator to identify chatbot design flaws using state, path, and
+                        transition coverage.<br />• Developed chatbots using IBM Watson Conversation and automated
+                        finite-transition-system generation from JSON files.
+                    </div>
+                </div>
+            </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="projects">
-        <li><div class="project-content"><span class="exp-title">Sign Language Detector</span><div class="tags">#Python #MediaPipe #Keras #AWS #SageMaker #AI</div><p class="exp-desc">Built a real-time sign-language detection application using MediaPipe and a Keras deep-learning model that achieved 99% accuracy. Built a Python front end connected to an AWS SageMaker endpoint through Lambda and API Gateway for real-time inference.</p></div><img class="project-image" src="assets/img/sign-language-detector.png" alt="Sign Language Detector Python user interface"></li>
-        <li><div class="project-content"><span class="exp-title">Desert Object Recognition And Avoidance</span><div class="tags">#TensorFlow #ComputerVision #Robotics #Kinect</div><p class="exp-desc">Used TensorFlow to detect rocks and obstacles from an Xbox Kinect feed for the UW Robotics navigation team and its rover-competition work.</p></div><img class="project-image" src="assets/img/port04.jpg" alt="Desert Object Recognition and Avoidance project"></li>
-        <li><div class="project-content"><span class="exp-title">Know Your Flags iOS Application</span><div class="tags">#Swift #Xcode #TensorFlow #CoreML #Mobile</div><p class="exp-desc">Built a Swift iOS application that lets users photograph country flags and predicts the associated country. Trained an image-classification dataset with MobileNets in TensorFlow and converted the model to Core ML.</p></div><img class="project-image" src="assets/img/port10.png" alt="Know Your Flags iOS application"></li>
-        <li><div class="project-content"><span class="exp-title">Video Object Detector</span><div class="tags">#Python #TensorFlow #OpenCV #ComputerVision</div><p class="exp-desc">Built a Python application that detects objects while playing video files using TensorFlow, OpenCV, and a model trained on Microsoft's COCO dataset.</p></div><img class="project-image" src="assets/img/videoClassifier.png" alt="Video Object Detector project"></li>
-        <li><div class="project-content"><span class="exp-title">Buffer Manager</span><div class="tags">#Systems #Algorithms #Backend</div><p class="exp-desc">Created a fully functional buffer manager that performs page replacement using the clock algorithm.</p></div><img class="project-image" src="assets/img/port05.jpg" alt="Buffer Manager project"></li>
-        <li><div class="project-content"><span class="exp-title">Easy Converter</span><div class="tags">#Swift #Xcode #iOS #Mobile</div><p class="exp-desc">Built an iOS application that lets users select common measurement units and convert between related units.</p></div><img class="project-image" src="assets/img/port08.png" alt="Easy Converter iOS application"></li>
-        <li><div class="project-content"><span class="exp-title">Emotion Predictor Cross-Platform App</span><div class="tags">#Xamarin #CSharp #Azure #API #Mobile</div><p class="exp-desc">Created a cross-platform application in Microsoft Xamarin for iOS, Android, and Windows that predicts emotions from user-uploaded images through HTTP requests to Microsoft's Cognitive Services API and JSON response processing.</p></div><img class="project-image" src="assets/img/port09.png" alt="Emotion Predictor cross-platform application"></li>
-        <li><div class="project-content"><span class="exp-title">Smart Home (IoT Project)</span><div class="tags">#IoT #NodeJS #RaspberryPi #HTTP</div><p class="exp-desc">Built an IoT system that controls room lights through POST requests to a Node.js server running on a Raspberry Pi.</p></div><img class="project-image" src="assets/img/port06.jpg" alt="Smart Home IoT project"></li>
-        <li><div class="project-content"><span class="exp-title">Airport Travel Network</span><div class="tags">#Algorithms #Graphs #Java</div><p class="exp-desc">Built a program that determines whether a traveler can reach one airport from another based on available connecting flights.</p></div><img class="project-image" src="assets/img/port01.jpg" alt="Airport Travel Network project"></li>
-        <li><div class="project-content"><span class="exp-title">Chrome Extension</span><div class="tags">#JavaScript #Web #API #ChromeExtension</div><p class="exp-desc">Built a Chrome extension that loads the Wikipedia page for song composers while a YouTube video is playing by sending HTTP requests to the Wikipedia API.</p></div><img class="project-image" src="assets/img/port07.jpg" alt="Chrome Extension project"></li>
-        <li><div class="project-content"><span class="exp-title">Maze Solving</span><div class="tags">#Java #Algorithms #DepthFirstSearch</div><p class="exp-desc">Created a Java game with a graphical interface that displays maze start and end positions and finds a path using depth-first search.</p></div><img class="project-image" src="assets/img/port02.jpg" alt="Maze Solving Java project"></li>
-        <li><div class="project-content"><span class="exp-title">Web Server Using LAMP on Raspberry Pi 3</span><div class="tags">#LAMP #RaspberryPi #Linux #WebServer #IoT</div><p class="exp-desc">Created a LAMP web server on a Raspberry Pi 3 with a graphical interface for uploading files and listing files stored on the server.</p></div><img class="project-image" src="assets/img/port03.jpg" alt="LAMP web server running on Raspberry Pi 3"></li>
-        <li><div class="project-content"><span class="exp-title">Key Tracker</span><div class="tags">#PHP #MySQL #JavaScript #HTML #CSS #Web</div><p class="exp-desc">Built a web application that performed CRUD operations on employee records and authorized building access based on employee identification numbers.</p></div><img class="project-image" src="assets/img/key-tracker.png" alt="Key Tracker web application"></li>
-        <li><div class="project-content"><span class="exp-title">HealthPRO: Health and Nutrition Tracker</span><div class="tags">#iOS #Swift #Vision #OCR #Xcode #Git</div><p class="exp-desc">Built an iOS application that tracks users' food intake and recommends exercise routines to help them reach weight goals. Used Apple's Vision framework to extract nutrition information from food labels with OCR.</p></div><img class="project-image" src="assets/img/healthpro.png" alt="HealthPRO iOS health and nutrition tracker application"></li>
-      </ul>
-    </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul class="projects">
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Sign Language Detector</span>
+                            <div class="tags">#Python #MediaPipe #Keras #AWS #SageMaker #AI</div>
+                            <p class="exp-desc">
+                                Built a real-time sign-language detection application using MediaPipe and a Keras
+                                deep-learning model that achieved 99% accuracy. Built a Python front end connected to an
+                                AWS SageMaker endpoint through Lambda and API Gateway for real-time inference.
+                            </p>
+                        </div>
+                        <img
+                            class="project-image"
+                            src="assets/img/sign-language-detector.png"
+                            alt="Sign Language Detector Python user interface"
+                        />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Desert Object Recognition And Avoidance</span>
+                            <div class="tags">#TensorFlow #ComputerVision #Robotics #Kinect</div>
+                            <p class="exp-desc">
+                                Used TensorFlow to detect rocks and obstacles from an Xbox Kinect feed for the UW
+                                Robotics navigation team and its rover-competition work.
+                            </p>
+                        </div>
+                        <img
+                            class="project-image"
+                            src="assets/img/port04.jpg"
+                            alt="Desert Object Recognition and Avoidance project"
+                        />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Know Your Flags iOS Application</span>
+                            <div class="tags">#Swift #Xcode #TensorFlow #CoreML #Mobile</div>
+                            <p class="exp-desc">
+                                Built a Swift iOS application that lets users photograph country flags and predicts the
+                                associated country. Trained an image-classification dataset with MobileNets in
+                                TensorFlow and converted the model to Core ML.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port10.png" alt="Know Your Flags iOS application" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Video Object Detector</span>
+                            <div class="tags">#Python #TensorFlow #OpenCV #ComputerVision</div>
+                            <p class="exp-desc">
+                                Built a Python application that detects objects while playing video files using
+                                TensorFlow, OpenCV, and a model trained on Microsoft's COCO dataset.
+                            </p>
+                        </div>
+                        <img
+                            class="project-image"
+                            src="assets/img/videoClassifier.png"
+                            alt="Video Object Detector project"
+                        />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Buffer Manager</span>
+                            <div class="tags">#Systems #Algorithms #Backend</div>
+                            <p class="exp-desc">
+                                Created a fully functional buffer manager that performs page replacement using the clock
+                                algorithm.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port05.jpg" alt="Buffer Manager project" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Easy Converter</span>
+                            <div class="tags">#Swift #Xcode #iOS #Mobile</div>
+                            <p class="exp-desc">
+                                Built an iOS application that lets users select common measurement units and convert
+                                between related units.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port08.png" alt="Easy Converter iOS application" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Emotion Predictor Cross-Platform App</span>
+                            <div class="tags">#Xamarin #CSharp #Azure #API #Mobile</div>
+                            <p class="exp-desc">
+                                Created a cross-platform application in Microsoft Xamarin for iOS, Android, and Windows
+                                that predicts emotions from user-uploaded images through HTTP requests to Microsoft's
+                                Cognitive Services API and JSON response processing.
+                            </p>
+                        </div>
+                        <img
+                            class="project-image"
+                            src="assets/img/port09.png"
+                            alt="Emotion Predictor cross-platform application"
+                        />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Smart Home (IoT Project)</span>
+                            <div class="tags">#IoT #NodeJS #RaspberryPi #HTTP</div>
+                            <p class="exp-desc">
+                                Built an IoT system that controls room lights through POST requests to a Node.js server
+                                running on a Raspberry Pi.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port06.jpg" alt="Smart Home IoT project" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Airport Travel Network</span>
+                            <div class="tags">#Algorithms #Graphs #Java</div>
+                            <p class="exp-desc">
+                                Built a program that determines whether a traveler can reach one airport from another
+                                based on available connecting flights.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port01.jpg" alt="Airport Travel Network project" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Chrome Extension</span>
+                            <div class="tags">#JavaScript #Web #API #ChromeExtension</div>
+                            <p class="exp-desc">
+                                Built a Chrome extension that loads the Wikipedia page for song composers while a
+                                YouTube video is playing by sending HTTP requests to the Wikipedia API.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port07.jpg" alt="Chrome Extension project" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Maze Solving</span>
+                            <div class="tags">#Java #Algorithms #DepthFirstSearch</div>
+                            <p class="exp-desc">
+                                Created a Java game with a graphical interface that displays maze start and end
+                                positions and finds a path using depth-first search.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/port02.jpg" alt="Maze Solving Java project" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Web Server Using LAMP on Raspberry Pi 3</span>
+                            <div class="tags">#LAMP #RaspberryPi #Linux #WebServer #IoT</div>
+                            <p class="exp-desc">
+                                Created a LAMP web server on a Raspberry Pi 3 with a graphical interface for uploading
+                                files and listing files stored on the server.
+                            </p>
+                        </div>
+                        <img
+                            class="project-image"
+                            src="assets/img/port03.jpg"
+                            alt="LAMP web server running on Raspberry Pi 3"
+                        />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">Key Tracker</span>
+                            <div class="tags">#PHP #MySQL #JavaScript #HTML #CSS #Web</div>
+                            <p class="exp-desc">
+                                Built a web application that performed CRUD operations on employee records and
+                                authorized building access based on employee identification numbers.
+                            </p>
+                        </div>
+                        <img class="project-image" src="assets/img/key-tracker.png" alt="Key Tracker web application" />
+                    </li>
+                    <li>
+                        <div class="project-content">
+                            <span class="exp-title">HealthPRO: Health and Nutrition Tracker</span>
+                            <div class="tags">#iOS #Swift #Vision #OCR #Xcode #Git</div>
+                            <p class="exp-desc">
+                                Built an iOS application that tracks users' food intake and recommends exercise routines
+                                to help them reach weight goals. Used Apple's Vision framework to extract nutrition
+                                information from food labels with OCR.
+                            </p>
+                        </div>
+                        <img
+                            class="project-image"
+                            src="assets/img/healthpro.png"
+                            alt="HealthPRO iOS health and nutrition tracker application"
+                        />
+                    </li>
+                </ul>
+            </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills"><li>Swift</li><li>Python</li><li>Java</li><li>C++</li><li>C#</li><li>Objective-C</li><li>JavaScript</li><li>SQL</li><li>.NET</li><li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>Jenkins</li><li>CI/CD</li><li>Xcode</li><li>Fastlane</li><li>AWS</li><li>GCP</li><li>SQL Server</li><li>UiPath</li><li>Postman</li><li>ARKit</li><li>TrueDepth</li><li>Zoom SDK</li><li>Mixpanel</li><li>Flurry Analytics</li><li>TensorFlow</li><li>OpenCV</li><li>MediaPipe</li><li>Keras</li><li>Core ML</li><li>AWS SageMaker</li><li>AWS Lambda</li><li>API Gateway</li><li>Node.js</li><li>Xamarin</li><li>Automated Testing</li><li>UI Testing</li><li>Claude Code</li><li>GitHub Copilot</li><li>Product Analytics</li><li>Financial Modeling</li><li>Data Visualization</li></ul>
-    </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Swift</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                    <li>Objective-C</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>.NET</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>GitHub Actions</li>
+                    <li>Jenkins</li>
+                    <li>CI/CD</li>
+                    <li>Xcode</li>
+                    <li>Fastlane</li>
+                    <li>AWS</li>
+                    <li>GCP</li>
+                    <li>SQL Server</li>
+                    <li>UiPath</li>
+                    <li>Postman</li>
+                    <li>ARKit</li>
+                    <li>TrueDepth</li>
+                    <li>Zoom SDK</li>
+                    <li>Mixpanel</li>
+                    <li>Flurry Analytics</li>
+                    <li>TensorFlow</li>
+                    <li>OpenCV</li>
+                    <li>MediaPipe</li>
+                    <li>Keras</li>
+                    <li>Core ML</li>
+                    <li>AWS SageMaker</li>
+                    <li>AWS Lambda</li>
+                    <li>API Gateway</li>
+                    <li>Node.js</li>
+                    <li>Xamarin</li>
+                    <li>Automated Testing</li>
+                    <li>UI Testing</li>
+                    <li>Claude Code</li>
+                    <li>GitHub Copilot</li>
+                    <li>Product Analytics</li>
+                    <li>Financial Modeling</li>
+                    <li>Data Visualization</li>
+                </ul>
+            </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <form class="contact-form" autocomplete="off" action="mailto:pranav.rajiv@kellogg.northwestern.edu" method="post" enctype="text/plain">
-        <label for="name" class="visually-hidden">Your Name</label><input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
-        <label for="email" class="visually-hidden">Your Email</label><input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
-        <label for="message" class="visually-hidden">Your Message</label><textarea id="message" name="message" rows="4" placeholder="How can I help you?" required aria-required="true"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </div>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjykjwkz" method="POST">
+                    <label for="name" class="visually-hidden">Your Name</label
+                    ><input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                        aria-required="true"
+                    /><label for="email" class="visually-hidden">Your Email</label
+                    ><input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                        aria-required="true"
+                    />
 
-  <script>
-    document.addEventListener('scroll', function () {
-      const navLinks = document.querySelectorAll('nav a');
-      const sections = ['about', 'education', 'experience', 'projects', 'skills', 'contact'].map(id => document.getElementById(id));
-      const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-      let current = 0;
-      sections.forEach((s, i) => { if (s && s.offsetTop - 80 <= scrollPos) current = i; });
-      navLinks.forEach((a, i) => a.classList.toggle('active', i === current));
-    });
-  </script>
-</body>
+                    <label for="message" class="visually-hidden">Your Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="How can I help you?"
+                        required
+                        aria-required="true"
+                    ></textarea>
+
+                    <input type="hidden" name="_subject" value="New message from Pranav Rajiv's portfolio" />
+
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <p id="form-status" role="status" aria-live="polite"></p>
+            </section>
+        </div>
+
+        <script>
+            document.addEventListener("scroll", function () {
+                const navLinks = document.querySelectorAll("nav a");
+                const sections = ["about", "education", "experience", "projects", "skills", "contact"].map((id) =>
+                    document.getElementById(id)
+                );
+                const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+                let current = 0;
+                sections.forEach((s, i) => {
+                    if (s && s.offsetTop - 80 <= scrollPos) current = i;
+                });
+                navLinks.forEach((a, i) => a.classList.toggle("active", i === current));
+            });
+        </script>
+
+        <script>
+            const contactForm = document.getElementById("contact-form");
+            const formStatus = document.getElementById("form-status");
+
+            contactForm.addEventListener("submit", async function (event) {
+                event.preventDefault();
+
+                formStatus.textContent = "Sending...";
+                formStatus.className = "";
+
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: "POST",
+                        body: new FormData(contactForm),
+                        headers: {
+                            Accept: "application/json",
+                        },
+                    });
+
+                    if (response.ok) {
+                        contactForm.reset();
+                        formStatus.textContent = "Thanks — your message was sent successfully.";
+                        formStatus.className = "form-success";
+                    } else {
+                        formStatus.textContent = "Sorry, the message could not be sent. Please email me directly.";
+                        formStatus.className = "form-error";
+                    }
+                } catch (error) {
+                    formStatus.textContent = "Sorry, the message could not be sent. Please email me directly.";
+                    formStatus.className = "form-error";
+                }
+            });
+        </script>
+    </body>
 </html>
